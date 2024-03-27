@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GameResult" representedClassName="GameResult" syncable="YES">
+        <attribute name="finalBlackPlayerName" optional="YES" attributeType="String"/>
+        <attribute name="finalBlacksCapturedValue" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finalCapturedBlackPieces" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finalCapturedWhitePieces" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finalGameDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finalMoveCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finalOpponentType" optional="YES" attributeType="String"/>
+        <attribute name="finalWhitePlayerName" optional="YES" attributeType="String"/>
+        <attribute name="finalWhitesCapturedValue" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="winner" optional="YES" attributeType="String"/>
+    </entity>
+</model>

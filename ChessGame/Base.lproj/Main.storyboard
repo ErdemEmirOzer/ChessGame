@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GameVC-->
+        <scene sceneID="Pky-ZZ-ugj">
+            <objects>
+                <viewController id="5Ax-QQ-S5p" customClass="GameVC" customModule="ChessGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="00E-ha-uFw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chessboard" translatesAutoresizingMaskIntoConstraints="NO" id="zDO-AU-9Oy">
+                                <rect key="frame" x="7" y="160" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn1" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-lr-LMF">
+                                <rect key="frame" x="357" y="460" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn1" translatesAutoresizingMaskIntoConstraints="NO" id="7OP-fO-XKN">
+                                <rect key="frame" x="307" y="460" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn1" translatesAutoresizingMaskIntoConstraints="NO" id="jqu-AT-q5R">
+                                <rect key="frame" x="257" y="460" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn1" translatesAutoresizingMaskIntoConstraints="NO" id="iuS-DL-X0T">
+                                <rect key="frame" x="207" y="460" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn1" translatesAutoresizingMaskIntoConstraints="NO" id="3fn-9u-Tqy">
+                                <rect key="frame" x="157" y="460" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn1" translatesAutoresizingMaskIntoConstraints="NO" id="c17-RV-qZc">
+                                <rect key="frame" x="7" y="460" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn1" translatesAutoresizingMaskIntoConstraints="NO" id="KNo-Tb-65f">
+                                <rect key="frame" x="57" y="460" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn1" translatesAutoresizingMaskIntoConstraints="NO" id="94z-PO-vY1">
+                                <rect key="frame" x="107" y="460" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rook1" translatesAutoresizingMaskIntoConstraints="NO" id="h8Q-XD-zfc">
+                                <rect key="frame" x="7" y="510" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rook1" translatesAutoresizingMaskIntoConstraints="NO" id="uAV-Te-Ovn">
+                                <rect key="frame" x="357" y="510" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="knight1" translatesAutoresizingMaskIntoConstraints="NO" id="dAl-IH-suz">
+                                <rect key="frame" x="57" y="510" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="knight1" translatesAutoresizingMaskIntoConstraints="NO" id="Iry-zJ-2tq">
+                                <rect key="frame" x="307" y="510" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bishop1" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-zc-zuD">
+                                <rect key="frame" x="107" y="510" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bishop1" translatesAutoresizingMaskIntoConstraints="NO" id="dtI-va-Glm">
+                                <rect key="frame" x="257" y="510" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queen1" translatesAutoresizingMaskIntoConstraints="NO" id="phv-nr-KDb">
+                                <rect key="frame" x="157" y="510" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="king1" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-6O-M7m">
+                                <rect key="frame" x="207" y="510" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rook2" translatesAutoresizingMaskIntoConstraints="NO" id="Nwe-F9-l0p">
+                                <rect key="frame" x="7" y="160" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bishop2" translatesAutoresizingMaskIntoConstraints="NO" id="zDT-Bd-nJL">
+                                <rect key="frame" x="257" y="160" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="king2" translatesAutoresizingMaskIntoConstraints="NO" id="aaq-wo-Xf6">
+                                <rect key="frame" x="207" y="160" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn2" translatesAutoresizingMaskIntoConstraints="NO" id="XV9-Zl-XJG">
+                                <rect key="frame" x="207" y="210" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn2" translatesAutoresizingMaskIntoConstraints="NO" id="GtE-vh-rUM">
+                                <rect key="frame" x="257" y="210" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn2" translatesAutoresizingMaskIntoConstraints="NO" id="e12-k0-DgY">
+                                <rect key="frame" x="307" y="210" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn2" translatesAutoresizingMaskIntoConstraints="NO" id="Aan-2u-BLn">
+                                <rect key="frame" x="357" y="210" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn2" translatesAutoresizingMaskIntoConstraints="NO" id="lUt-Nd-jmV">
+                                <rect key="frame" x="157" y="210" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn2" translatesAutoresizingMaskIntoConstraints="NO" id="3Md-W9-sgL">
+                                <rect key="frame" x="107" y="210" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn2" translatesAutoresizingMaskIntoConstraints="NO" id="Tbm-gi-CrR">
+                                <rect key="frame" x="57" y="210" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawn2" translatesAutoresizingMaskIntoConstraints="NO" id="zbs-iN-rcb">
+                                <rect key="frame" x="7" y="210" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queen2" translatesAutoresizingMaskIntoConstraints="NO" id="KDh-dP-OmD">
+                                <rect key="frame" x="157" y="160" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bishop2" translatesAutoresizingMaskIntoConstraints="NO" id="3zK-ti-iBk">
+                                <rect key="frame" x="107" y="160" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="knight2" translatesAutoresizingMaskIntoConstraints="NO" id="hcs-Gj-gNw">
+                                <rect key="frame" x="57" y="160" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="knight2" translatesAutoresizingMaskIntoConstraints="NO" id="rmr-4U-mi0">
+                                <rect key="frame" x="307" y="160" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rook2" translatesAutoresizingMaskIntoConstraints="NO" id="vVU-sF-835">
+                                <rect key="frame" x="357" y="160" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER MOVE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pc2-UY-W7p">
+                                <rect key="frame" x="145" y="600" width="120" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKJ-pN-4t0">
+                                <rect key="frame" x="161" y="665" width="88" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="UNDO">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="undoClicked:" destination="5Ax-QQ-S5p" eventType="touchUpInside" id="V14-4O-geH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remainig Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RV7-U6-gts">
+                                <rect key="frame" x="135" y="40" width="144" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdO-iB-w9W">
+                                <rect key="frame" x="155" y="774" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="EXIT">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemCyanColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exitClicked:" destination="5Ax-QQ-S5p" eventType="touchUpInside" id="Y0G-co-t2s"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="GameToVC" id="LSz-bd-ejF"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRp-93-yFr">
+                                <rect key="frame" x="207" y="90" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turn :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aup-se-lk4">
+                                <rect key="frame" x="135" y="90" width="72" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwT-WS-HDb">
+                                <rect key="frame" x="20" y="62" width="87" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
+                                    <color key="baseBackgroundColor" systemColor="systemCyanColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startClicked:" destination="5Ax-QQ-S5p" eventType="touchUpInside" id="Xhu-hs-vWw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="swD-tq-MQy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ouf-Ef-ZmN"/>
+                    <connections>
+                        <outlet property="ChessBoardImageView" destination="zDO-AU-9Oy" id="pQW-Wb-p06"/>
+                        <outlet property="blackBishop1" destination="3zK-ti-iBk" id="xqy-hY-pXa"/>
+                        <outlet property="blackBishop2" destination="zDT-Bd-nJL" id="jJl-Bw-ZUZ"/>
+                        <outlet property="blackKing" destination="aaq-wo-Xf6" id="aXg-GO-aMO"/>
+                        <outlet property="blackKnight1" destination="hcs-Gj-gNw" id="3Zj-sb-Qyb"/>
+                        <outlet property="blackKnight2" destination="rmr-4U-mi0" id="nkn-RP-YIG"/>
+                        <outlet property="blackPawn1" destination="zbs-iN-rcb" id="xWL-0k-REZ"/>
+                        <outlet property="blackPawn2" destination="Tbm-gi-CrR" id="bEb-Bh-OfN"/>
+                        <outlet property="blackPawn3" destination="3Md-W9-sgL" id="bc6-n5-Xlc"/>
+                        <outlet property="blackPawn4" destination="lUt-Nd-jmV" id="oOx-fx-cMQ"/>
+                        <outlet property="blackPawn5" destination="XV9-Zl-XJG" id="E5e-zp-xrv"/>
+                        <outlet property="blackPawn6" destination="GtE-vh-rUM" id="LSP-g6-RFW"/>
+                        <outlet property="blackPawn7" destination="e12-k0-DgY" id="Mvw-NX-DGe"/>
+                        <outlet property="blackPawn8" destination="Aan-2u-BLn" id="pmk-Wk-KDY"/>
+                        <outlet property="blackQueen" destination="KDh-dP-OmD" id="9M6-DD-KYj"/>
+                        <outlet property="blackRook1" destination="Nwe-F9-l0p" id="1c0-bo-eot"/>
+                        <outlet property="blackRook2" destination="vVU-sF-835" id="YJp-LR-NNH"/>
+                        <outlet property="moveInput" destination="Pc2-UY-W7p" id="yiK-lm-U4V"/>
+                        <outlet property="remainingTimeLabel" destination="RV7-U6-gts" id="rjC-8q-kaL"/>
+                        <outlet property="turnIndicatorView" destination="mRp-93-yFr" id="G3M-w1-mdH"/>
+                        <outlet property="whiteBishop1" destination="Caw-zc-zuD" id="wxJ-zQ-sU5"/>
+                        <outlet property="whiteBishop2" destination="dtI-va-Glm" id="6H9-6M-d50"/>
+                        <outlet property="whiteKing" destination="oyH-6O-M7m" id="rrh-PU-2bQ"/>
+                        <outlet property="whiteKnight1" destination="dAl-IH-suz" id="AM1-FL-8Ix"/>
+                        <outlet property="whiteKnight2" destination="Iry-zJ-2tq" id="RfG-Fa-CRM"/>
+                        <outlet property="whitePawn1" destination="c17-RV-qZc" id="fb3-Zf-mMx"/>
+                        <outlet property="whitePawn2" destination="KNo-Tb-65f" id="fwb-aF-YgI"/>
+                        <outlet property="whitePawn3" destination="94z-PO-vY1" id="jqT-Qf-dHc"/>
+                        <outlet property="whitePawn4" destination="3fn-9u-Tqy" id="HxP-44-xOR"/>
+                        <outlet property="whitePawn5" destination="iuS-DL-X0T" id="E9F-6l-6RA"/>
+                        <outlet property="whitePawn6" destination="jqu-AT-q5R" id="1rs-sV-OLE"/>
+                        <outlet property="whitePawn7" destination="7OP-fO-XKN" id="C7k-LE-GL6"/>
+                        <outlet property="whitePawn8" destination="gFl-lr-LMF" id="Ama-Ji-ZJf"/>
+                        <outlet property="whiteQueen" destination="phv-nr-KDb" id="tao-Gc-RtX"/>
+                        <outlet property="whiteRook1" destination="h8Q-XD-zfc" id="ctV-Gb-YVh"/>
+                        <outlet property="whiteRook2" destination="uAV-Te-Ovn" id="EcK-ma-cXY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cw-ln-ULx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282.60869565217394" y="6.6964285714285712"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="8Iu-wE-cAT">
+            <objects>
+                <viewController id="5cy-ac-Jxd" customClass="SettingsVC" customModule="ChessGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x76-Q1-cTc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MenuBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-Ia-idd">
+                                <rect key="frame" x="0.0" y="30" width="414" height="836"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCT-U3-xeO">
+                                <rect key="frame" x="275" y="420" width="70" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8v-Eu-45c">
+                                <rect key="frame" x="275" y="270" width="70" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu9-IO-k9P">
+                                <rect key="frame" x="30" y="570" width="167" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GAME MUSIC">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="gameMusicChangeClicked:" destination="5cy-ac-Jxd" eventType="touchUpInside" id="nkU-j7-Sdv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSN-kf-rfM">
+                                <rect key="frame" x="30" y="270" width="167" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="MOVE TIME">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="moveTimeChangeClicked:" destination="5cy-ac-Jxd" eventType="touchUpInside" id="M2c-Hs-N80"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-SS-2fw">
+                                <rect key="frame" x="30" y="420" width="167" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PIECE SOUND">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pieceSoundChangeClicked:" destination="5cy-ac-Jxd" eventType="touchUpInside" id="Uy8-xw-bHL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dz-is-x6Y">
+                                <rect key="frame" x="162" y="700" width="90" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="OK">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="OKButton:" destination="5cy-ac-Jxd" eventType="touchUpInside" id="d97-P1-FYp"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="SettingsToVC" id="RGD-l5-sLi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjj-Jr-wa7">
+                                <rect key="frame" x="30" y="120" width="167" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="OPPONENT">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="opponentChangeClicked:" destination="5cy-ac-Jxd" eventType="touchUpInside" id="jJf-pB-bax"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAJ-hh-lOK">
+                                <rect key="frame" x="287" y="134" width="50" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-ca-b42">
+                                <rect key="frame" x="260" y="120" width="100" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2k0-mt-bKq">
+                                <rect key="frame" x="275" y="570" width="70" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cxq-Gn-usr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qds-oA-o1T"/>
+                    <connections>
+                        <outlet property="OpponentLabel" destination="C3n-ca-b42" id="gop-Fr-BDg"/>
+                        <outlet property="SettingsBackground" destination="aKP-Ia-idd" id="VqE-S3-hi3"/>
+                        <outlet property="gameMusicLabel" destination="2k0-mt-bKq" id="WWm-ti-s6v"/>
+                        <outlet property="moveTimeLabel" destination="T8v-Eu-45c" id="9yH-Ec-ndY"/>
+                        <outlet property="pieceSoundLabel" destination="mCT-U3-xeO" id="qW3-YI-7QN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTh-gT-t8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.01449275362324" y="-747.32142857142856"/>
+        </scene>
+        <!--ScoreVC-->
+        <scene sceneID="au3-ji-eB4">
+            <objects>
+                <viewController id="dHU-im-mMC" customClass="ScoreVC" customModule="ChessGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VC0-Ja-2Ps">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QhL-Q2-IDW">
+                                <rect key="frame" x="0.0" y="62" width="414" height="710"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scoreCell" id="t8h-ja-8Gb">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t8h-ja-8Gb" id="czN-Yq-OmA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My7-rd-0MU">
+                                <rect key="frame" x="20" y="782" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteClicked:" destination="dHU-im-mMC" eventType="touchUpInside" id="0nR-aa-Exa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q6-Hp-f27">
+                                <rect key="frame" x="294" y="782" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Delete All"/>
+                                <connections>
+                                    <action selector="deleteAllClicked:" destination="dHU-im-mMC" eventType="touchUpInside" id="l6F-NM-Da1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZL-4z-fh9">
+                                <rect key="frame" x="170" y="782" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit">
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exitClicked:" destination="dHU-im-mMC" eventType="touchUpInside" id="QhM-Hr-Rba"/>
+                                    <action selector="exitClicked:" destination="qaT-jc-25r" eventType="touchUpInside" id="i7m-aL-x7L"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ScoreToVC" id="Zn3-E8-F1B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IL5-e0-3s1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ctB-oY-Hu1"/>
+                    <connections>
+                        <outlet property="scoreTableView" destination="QhL-Q2-IDW" id="tum-Ub-VP0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5C-os-96r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="qaT-jc-25r" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1717.3913043478262" y="6.6964285714285712"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChessGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="xaU-18-e0u">
+                                <rect key="frame" x="0.0" y="30" width="414" height="836"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYy-so-vXj">
+                                <rect key="frame" x="124" y="480" width="167" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ikv-DO-Nft"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SCORE">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ScoreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2e-JP-x4J"/>
+                                    <segue destination="dHU-im-mMC" kind="show" identifier="toScoreVC" id="BlD-kc-Sxy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7K0-nl-c3F">
+                                <rect key="frame" x="124" y="330" width="167" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Wny-hu-cct"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SETTINGS">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SettingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VFa-J1-rsr"/>
+                                    <segue destination="5cy-ac-Jxd" kind="show" identifier="toSettingsVC" id="wmO-41-Twm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfS-Mh-vbN">
+                                <rect key="frame" x="124" y="180" width="167" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="foK-7B-A1i"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PLAY">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FC4-z7-P4j"/>
+                                    <segue destination="5Ax-QQ-S5p" kind="show" identifier="toGameVC" id="Xig-OS-1UB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgG-cQ-gT5">
+                                <rect key="frame" x="124" y="612" width="167" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ABOUT">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="AboutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KgO-ye-qHn"/>
+                                    <segue destination="Xqt-vV-5V8" kind="show" identifier="toAboutVC" id="sWf-Oa-sMi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TgG-cQ-gT5" firstAttribute="top" secondItem="IYy-so-vXj" secondAttribute="bottom" constant="84" id="4bd-2o-7wV"/>
+                            <constraint firstItem="IYy-so-vXj" firstAttribute="leading" secondItem="TgG-cQ-gT5" secondAttribute="leading" id="6wb-cZ-OPZ"/>
+                            <constraint firstItem="xaU-18-e0u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="9gt-qG-6cw"/>
+                            <constraint firstItem="mfS-Mh-vbN" firstAttribute="leading" secondItem="7K0-nl-c3F" secondAttribute="leading" id="DLO-sB-ill"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TgG-cQ-gT5" secondAttribute="bottom" constant="233" id="FVa-b0-oEY"/>
+                            <constraint firstItem="7K0-nl-c3F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="330" id="Mdg-Tw-JUV"/>
+                            <constraint firstItem="xaU-18-e0u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OCe-v8-t8P"/>
+                            <constraint firstAttribute="trailing" secondItem="xaU-18-e0u" secondAttribute="trailing" id="Pga-ux-cuW"/>
+                            <constraint firstItem="IYy-so-vXj" firstAttribute="trailing" secondItem="TgG-cQ-gT5" secondAttribute="trailing" id="dpV-40-ArY"/>
+                            <constraint firstAttribute="bottom" secondItem="xaU-18-e0u" secondAttribute="bottom" constant="20" symbolic="YES" id="eiJ-33-LNU"/>
+                            <constraint firstItem="xaU-18-e0u" firstAttribute="centerX" secondItem="IYy-so-vXj" secondAttribute="centerX" id="hxk-HP-kV4"/>
+                            <constraint firstItem="mfS-Mh-vbN" firstAttribute="trailing" secondItem="7K0-nl-c3F" secondAttribute="trailing" id="kGS-rm-v3V"/>
+                            <constraint firstItem="mfS-Mh-vbN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="kkT-9W-JYZ"/>
+                            <constraint firstItem="mfS-Mh-vbN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="qK8-8Y-jc9"/>
+                            <constraint firstItem="7K0-nl-c3F" firstAttribute="trailing" secondItem="IYy-so-vXj" secondAttribute="trailing" id="tEx-7K-bEO"/>
+                            <constraint firstItem="7K0-nl-c3F" firstAttribute="leading" secondItem="IYy-so-vXj" secondAttribute="leading" id="zLm-j8-yzB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RiG-Ke-ydN"/>
+                    <connections>
+                        <outlet property="Background" destination="xaU-18-e0u" id="IfO-KT-5Y4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.01449275362324" y="6.6964285714285712"/>
+        </scene>
+        <!--AboutVC-->
+        <scene sceneID="myH-2S-ekB">
+            <objects>
+                <viewController id="Xqt-vV-5V8" customClass="AboutVC" customModule="ChessGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bH9-zw-2kA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="yvN-Xt-WZx">
+                                <rect key="frame" x="0.0" y="31" width="414" height="835"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkv-D3-kcP">
+                                <rect key="frame" x="109" y="596" width="196" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Tsb-p8-HYK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="BACK">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="BackButton:" destination="Xqt-vV-5V8" eventType="touchUpInside" id="GNF-YU-0WP"/>
+                                    <action selector="BackButton:" destination="9yt-9O-Bcg" eventType="touchUpInside" id="Z9k-zC-AWK"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="AboutToVC" id="u5F-nh-c4Q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI CHESS GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRL-RG-Age">
+                                <rect key="frame" x="76" y="146" width="262" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="EPo-ji-3mV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERDEM EMIR OZER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-hn-aDi">
+                                <rect key="frame" x="41" y="372" width="332" height="159"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsd-nV-HkI">
+                                <rect key="frame" x="0.0" y="16" width="414" height="44"/>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVELOPER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-61-vUJ">
+                                <rect key="frame" x="44" y="293" width="326" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lsm-kN-EIW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tQo-PR-GoI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CPJ-61-vUJ" firstAttribute="centerX" secondItem="ba7-hn-aDi" secondAttribute="centerX" id="3LI-Og-mkW"/>
+                            <constraint firstItem="Gsd-nV-HkI" firstAttribute="centerX" secondItem="fRL-RG-Age" secondAttribute="centerX" id="3kY-Fu-rkW"/>
+                            <constraint firstItem="ba7-hn-aDi" firstAttribute="leading" secondItem="tQo-PR-GoI" secondAttribute="leading" constant="41" id="59J-Vk-TGR"/>
+                            <constraint firstItem="CPJ-61-vUJ" firstAttribute="top" secondItem="fRL-RG-Age" secondAttribute="bottom" constant="59" id="5cB-H3-1SI"/>
+                            <constraint firstItem="rkv-D3-kcP" firstAttribute="leading" secondItem="tQo-PR-GoI" secondAttribute="leading" constant="109" id="6Op-9H-z26"/>
+                            <constraint firstAttribute="bottom" secondItem="yvN-Xt-WZx" secondAttribute="bottom" constant="20" symbolic="YES" id="7Uj-Jb-6Ja"/>
+                            <constraint firstItem="ba7-hn-aDi" firstAttribute="centerX" secondItem="rkv-D3-kcP" secondAttribute="centerX" id="7kG-LT-2cP"/>
+                            <constraint firstItem="yvN-Xt-WZx" firstAttribute="top" secondItem="tQo-PR-GoI" secondAttribute="top" constant="31" id="9eb-4h-7kA"/>
+                            <constraint firstItem="tQo-PR-GoI" firstAttribute="bottom" secondItem="rkv-D3-kcP" secondAttribute="bottom" constant="216" id="Cbg-Rv-bIR"/>
+                            <constraint firstItem="Gsd-nV-HkI" firstAttribute="leading" secondItem="bH9-zw-2kA" secondAttribute="leading" id="F12-bO-7Gp"/>
+                            <constraint firstAttribute="trailing" secondItem="Gsd-nV-HkI" secondAttribute="trailing" id="Fk5-JI-UUf"/>
+                            <constraint firstItem="Gsd-nV-HkI" firstAttribute="top" secondItem="tQo-PR-GoI" secondAttribute="top" constant="16" id="IeD-0C-eu3"/>
+                            <constraint firstItem="ba7-hn-aDi" firstAttribute="top" secondItem="CPJ-61-vUJ" secondAttribute="bottom" constant="19" id="Kiu-Fv-J6z"/>
+                            <constraint firstItem="Gsd-nV-HkI" firstAttribute="trailing" secondItem="yvN-Xt-WZx" secondAttribute="trailing" id="MMa-ZV-RCN"/>
+                            <constraint firstItem="CPJ-61-vUJ" firstAttribute="leading" secondItem="tQo-PR-GoI" secondAttribute="leading" constant="44" id="ZqZ-lj-JPq"/>
+                            <constraint firstItem="fRL-RG-Age" firstAttribute="centerX" secondItem="CPJ-61-vUJ" secondAttribute="centerX" id="a5W-7D-UNV"/>
+                            <constraint firstItem="Gsd-nV-HkI" firstAttribute="leading" secondItem="yvN-Xt-WZx" secondAttribute="leading" id="am2-xJ-Gr3"/>
+                            <constraint firstItem="fRL-RG-Age" firstAttribute="leading" secondItem="tQo-PR-GoI" secondAttribute="leading" constant="76" id="dbz-pm-9OE"/>
+                            <constraint firstItem="rkv-D3-kcP" firstAttribute="top" secondItem="ba7-hn-aDi" secondAttribute="bottom" constant="65" id="hgw-WG-2Wv"/>
+                            <constraint firstItem="fRL-RG-Age" firstAttribute="top" secondItem="Gsd-nV-HkI" secondAttribute="bottom" constant="86" id="mBz-O4-oLP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="37Y-nr-aWJ"/>
+                    <connections>
+                        <outlet property="AboutBackGround" destination="yvN-Xt-WZx" id="iVf-Iy-uMs"/>
+                        <outlet property="title1" destination="fRL-RG-Age" id="8JJ-ym-sde"/>
+                        <outlet property="title2" destination="CPJ-61-vUJ" id="hXg-Ar-1an"/>
+                        <outlet property="title3" destination="ba7-hn-aDi" id="WKh-1o-bLu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4eQ-IW-4HG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9yt-9O-Bcg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-671" y="818"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Zn3-E8-F1B"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="MenuBackGround" width="434" height="612"/>
+        <image name="bishop1" width="168" height="362"/>
+        <image name="bishop2" width="146" height="364"/>
+        <image name="chessboard" width="225" height="224"/>
+        <image name="king1" width="222" height="434"/>
+        <image name="king2" width="236" height="394"/>
+        <image name="knight1" width="216" height="336"/>
+        <image name="knight2" width="212" height="322"/>
+        <image name="pawn1" width="188" height="264"/>
+        <image name="pawn2" width="204" height="284"/>
+        <image name="queen1" width="180" height="384"/>
+        <image name="queen2" width="202" height="390"/>
+        <image name="rook1" width="210" height="286"/>
+        <image name="rook2" width="196" height="318"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
