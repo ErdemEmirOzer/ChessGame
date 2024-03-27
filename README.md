@@ -1,2 +1,1 @@
-# ChessGame
- 
+# ChessGame with Swift and AI algorithms
